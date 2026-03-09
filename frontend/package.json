@@ -1,8 +1,8 @@
 {
-  "homepage": "/",
   "name": "project1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://TeamKing33.github.io/",
   "dependencies": {
     "@babel/highlight": "^7.25.9",
     "@emotion/react": "^11.11.1",
@@ -24,10 +24,8 @@
     "annyang": "^2.6.1",
     "aos": "^2.3.4",
     "axios": "^1.6.2",
-    "bard": "^0.2.0",
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.2",
-    "buffer": "^6.0.3",
     "classnames": "^2.3.2",
     "compromise": "^14.13.0",
     "cors": "^2.8.5",
@@ -41,8 +39,6 @@
     "i18n": "^0.15.1",
     "i18next": "^23.8.2",
     "js-cookie": "^3.0.5",
-    "js-tokens": "^10.0.0",
-    "json-schema-traverse": "^1.0.0",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.8.2",
     "mdb-react-ui-kit": "^7.0.0",
@@ -63,7 +59,7 @@
     "react-speech-recognition": "^3.10.0",
     "react-voice": "^0.0.0",
     "react-xr": "^1.1.0",
-    "@react-three/fiber": "^10.8.2",
+    "@react-three/fiber": "^9.5.0",
     "stream-http": "^3.2.0",
     "styled-components": "^6.1.1",
     "swiper": "^11.1.5",
@@ -83,25 +79,14 @@
     "dev": "concurrently \"npm run frontend\" \"npm run backend\""
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
+    "extends": ["react-app", "react-app/jest"],
     "globals": {
       "$": true
     }
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
