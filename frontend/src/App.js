@@ -1,11 +1,11 @@
-import React,{useState,useEffect, lazy, Suspense,startTransition } from 'react';
+import React,{ lazy } from 'react';
 
 import { Routes,Route,BrowserRouter} from "react-router-dom";
 
 
 
 import Navbars from './component/Navbars';
-import Footer from './component/footer';
+// import Footer from './component/footer';
 
 
 import Signup from './component/Signup'
@@ -17,7 +17,7 @@ import './App.css';
 
 
 
-const Home = lazy(()=> import('./component/Home.js'))
+// const Home = lazy(()=> import('./component/Home.js'))
 const Home2 = lazy(()=> import('./component/home2.js'))
 const Click = lazy(()=> import('./component/click.js'))
 const IT = lazy(()=> import('./component/it/Employee.js'))
@@ -30,6 +30,7 @@ const Alldata = lazy(()=> import('./component/it/allDate.js'))
 // const  Chatbot = lazy(()=> import('./component/chatbot/chat.js'))
 // const  Pages = lazy(()=> import('./component/page.js'))
 // const  Department = lazy(()=> import('./component/Department.js'))
+const  Department = lazy(()=> import('./component/it/cssemp/Employeetable.js'))
 
 
 
@@ -104,7 +105,7 @@ const App = ()=>{
             <div>
           <Navbars />
                     
-           < Home2 />
+           < Department />
           
           
           {/* <Footer/> */}
