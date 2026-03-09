@@ -59,7 +59,7 @@
     "react-speech-recognition": "^3.10.0",
     "react-voice": "^0.0.0",
     "react-xr": "^1.1.0",
-    "@react-three/fiber": "^9.5.0",
+    "@react-three/fiber": "8.13.5",
     "stream-http": "^3.2.0",
     "styled-components": "^6.1.1",
     "swiper": "^11.1.5",
