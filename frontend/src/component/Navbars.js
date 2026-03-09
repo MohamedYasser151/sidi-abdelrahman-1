@@ -7,32 +7,32 @@ import Cookies from 'js-cookie';
 import './css/Navbars.css';
 import Img from './image/icon.png'
 // import Img1 from './image/earth.png'
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+// import Dropdown from 'react-bootstrap/Dropdown';
+// import DropdownButton from 'react-bootstrap/DropdownButton';
 const  Navbars = ({size}) => {
-  const [login, setLogin] = useState(false);
-  const [filter ,setFilter] = useState('');
+  // const [login, setLogin] = useState(false);
+  // const [filter ,setFilter] = useState('');
   const navigator = useNavigate ()
   
 
 
   
   // useTranslation
-  const { t, i18n } = useTranslation();
-  const changeEn = () =>{
-    i18n.changeLanguage('en')
-}
-const changeFr = () =>{
-    i18n.changeLanguage('ar')
-}
+//   const { t, i18n } = useTranslation();
+//   const changeEn = () =>{
+//     i18n.changeLanguage('en')
+// }
+// const changeFr = () =>{
+//     i18n.changeLanguage('ar')
+// }
 
 
-  const handleRemove = () =>{
-    Cookies.remove("login");
-    setLogin(false);
-    navigator("/Signin")
-    window.location.reload()
-  }
+  // const handleRemove = () =>{
+  //   Cookies.remove("login");
+  //   setLogin(false);
+  //   navigator("/Signin")
+  //   window.location.reload()
+  // }
 
   return (
     

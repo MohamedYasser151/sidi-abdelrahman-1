@@ -1,8 +1,8 @@
-import React, { useEffect, useState,useRef } from 'react'
+import React, { useEffect,useRef } from 'react'
 
-import { useNavigate ,NavLink} from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 
-import Cookies from 'js-cookie';
+// import Cookies from 'js-cookie';
 import Aos from 'aos'
 import  "aos/dist/aos.css" 
 import { useTranslation } from 'react-i18next';
@@ -11,7 +11,7 @@ import "./css/home.css"
 import styless from "./css/Home.module.css"
 
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 // import img from './image/TV.png'
 // import img2 from './image/fullscreen.png'
 // import img3 from './image/3.jpg'
@@ -44,8 +44,8 @@ import './css/styles.css';
 import { Autoplay, Pagination, Navigation ,EffectCoverflow} from 'swiper/modules';
 
 function Home() {
-  const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
+  // const navigate = useNavigate();
+  // const { t, i18n } = useTranslation();
  
     useEffect(()=>{
     Aos.init({duration:2000})
@@ -64,15 +64,15 @@ function Home() {
   const videoRef = useRef(null);
 
 
-  const handleFullscreen = () => {
-    if (videoRef.current.requestFullscreen) {
-      videoRef.current.requestFullscreen();
-    } else if (videoRef.current.webkitRequestFullscreen) { 
-      videoRef.current.webkitRequestFullscreen();
-    } else if (videoRef.current.msRequestFullscreen) { 
-      videoRef.current.msRequestFullscreen();
-    }
-  };
+  // const handleFullscreen = () => {
+  //   if (videoRef.current.requestFullscreen) {
+  //     videoRef.current.requestFullscreen();
+  //   } else if (videoRef.current.webkitRequestFullscreen) { 
+  //     videoRef.current.webkitRequestFullscreen();
+  //   } else if (videoRef.current.msRequestFullscreen) { 
+  //     videoRef.current.msRequestFullscreen();
+  //   }
+  // };
 
  
   return (
