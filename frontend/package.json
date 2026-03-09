@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://TeamKing33.github.io/",
   "name": "project1",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +24,7 @@
     "alexa-sdk": "^1.0.25",
     "annyang": "^2.6.1",
     "aos": "^2.3.4",
-    "axios": "^1.13.6",
+    "axios": "^1.6.2",
     "bard": "^0.2.0",
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.2",

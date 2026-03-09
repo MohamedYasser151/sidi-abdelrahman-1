@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-// import Cookies from 'js-cookie';
+import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
-// import axios from 'axios';
+import axios from 'axios';
 import styleess from './it/cssemp/employee.module.css';
 // import img from '../image/icon.png';
 import Button from 'react-bootstrap/Button';
@@ -18,8 +18,8 @@ const amiriFontUrl = '/fonts/Cairo-VariableFont_slnt,wght.ttf';
 
 const MyVerticallyCenteredModal = ({ show, onHide, doctorData }) => {
 
-  // const [services, setServices] = useState([]); // لتخزين البيانات من API
-  // const [searchTerm, setSearchTerm] = useState(''); // لتخزين النص المدخل في البحث
+  const [services, setServices] = useState([]); // لتخزين البيانات من API
+  const [searchTerm, setSearchTerm] = useState(''); // لتخزين النص المدخل في البحث
 
 
   
@@ -127,7 +127,7 @@ function Client() {
   const [data, setData] = useState([]);
   const [modalShow, setModalShow] = useState(false);
   const [selectedDoctorData, setSelectedDoctorData] = useState([]);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [hiddenReports, setHiddenReports] = useState([]);
 
   const onHide = () => setModalShow(false);
@@ -201,12 +201,12 @@ function Client() {
   //   setHiddenReports(updatedHiddenReports);
   //   localStorage.setItem('hiddenReports', JSON.stringify(updatedHiddenReports));
   // };
-  // const grandTotal = Object.keys(groupedData).reduce((total, name) => {
-  //   const groupTotal = groupedData[name]
-  //     .filter(item => !hiddenReports.includes(item.id)) 
-  //     .reduce((sum, item) => sum + parseFloat(item.price), 0); 
-  //   return total + groupTotal;
-  // }, 0);
+  const grandTotal = Object.keys(groupedData).reduce((total, name) => {
+    const groupTotal = groupedData[name]
+      .filter(item => !hiddenReports.includes(item.id)) 
+      .reduce((sum, item) => sum + parseFloat(item.price), 0); 
+    return total + groupTotal;
+  }, 0);
   // const TotalClient = Object.keys(groupedData).reduce((total, name) => {
   //   const groupTotal = groupedData[name]
   //     .filter(item => !hiddenReports.includes(item.id)) 
@@ -258,7 +258,7 @@ function Client() {
             
             <tbody>
     {Object.keys(groupedData).map(name => {
-      groupedData[name]
+      const totalPrice = groupedData[name]
         .filter(item => !hiddenReports.includes(item.id)) 
         .reduce((sum, item) => sum + parseFloat(item.price), 0); 
 

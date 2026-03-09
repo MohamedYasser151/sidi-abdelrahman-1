@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-// import Cookies from 'js-cookie';
+import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
-// import axios from 'axios';
+import axios from 'axios';
 import styleess from './cssemp/employee.module.css';
 // import img from '../image/icon.png';
 import Button from 'react-bootstrap/Button';
@@ -18,8 +18,8 @@ const amiriFontUrl = '/fonts/Cairo-VariableFont_slnt,wght.ttf';
 
 const MyVerticallyCenteredModal = ({ show, onHide, doctorData }) => {
 
-  // const [services, setServices] = useState([]); // لتخزين البيانات من API
-  // const [searchTerm, setSearchTerm] = useState(''); // لتخزين النص المدخل في البحث
+  const [services, setServices] = useState([]); // لتخزين البيانات من API
+  const [searchTerm, setSearchTerm] = useState(''); // لتخزين النص المدخل في البحث
 
 
   

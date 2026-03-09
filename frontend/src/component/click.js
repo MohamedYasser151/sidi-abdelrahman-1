@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-// import { useNavigate ,NavLink} from 'react-router-dom'
+import React, { useEffect, useState,useRef } from 'react'
+import { useNavigate ,NavLink} from 'react-router-dom'
 import stylesr from './css/Click.module.css';
 // import imgPhone from './image/10.png'; 
 // import imgPrinter from  './image/printer.png';
@@ -8,7 +8,7 @@ import stylesr from './css/Click.module.css';
 // import img2 from  './image/10.png';
 // import img3 from  './image/11.png';
 import Cookies from 'js-cookie';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function Click() {
   
@@ -21,7 +21,7 @@ function Click() {
       price: "",
     });
     const [report, setReport] = useState('');
-    // const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
   
     // const handleDepartmentChange = (Department) => {
     //   setSelectedDepartment({ Department});
@@ -36,7 +36,7 @@ function Click() {
     };
 
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   //    useEffect(() => {
   

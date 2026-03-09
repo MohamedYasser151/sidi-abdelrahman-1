@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
-// import Cookies from 'js-cookie';
+import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
-// import axios from 'axios';
+import axios from 'axios';
 import styleess from './cssemp/employee.module.css';
 // import img from '../image/icon.png';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-// import { PDFDocument, rgb } from 'pdf-lib';
-// import { saveAs } from 'file-saver';
-// import fontkit from '@pdf-lib/fontkit';
+import { PDFDocument, rgb } from 'pdf-lib';
+import { saveAs } from 'file-saver';
+import fontkit from '@pdf-lib/fontkit';
 
-// const amiriFontUrl = '/fonts/Cairo-VariableFont_slnt,wght.ttf'; 
+const amiriFontUrl = '/fonts/Cairo-VariableFont_slnt,wght.ttf'; 
 
 const MyVerticallyCenteredModal = ({ show, onHide, doctorData }) => {
   
@@ -114,7 +114,7 @@ function Employee() {
   const [data, setData] = useState([]);
   const [modalShow, setModalShow] = useState(false);
   const [selectedDoctorData, setSelectedDoctorData] = useState([]);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [hiddenReports, setHiddenReports] = useState([]);
 
   const onHide = () => setModalShow(false);
@@ -179,7 +179,7 @@ function Employee() {
 
 
 
- handleHideReport = async (id) => {
+ const handleHideReport = async (id) => {
   console.log('Attempting to hide report with ID:', id);
 
   try {
@@ -249,7 +249,7 @@ useEffect(() => {
             
             <tbody>
     {Object.keys(groupedData).map(name => {
-       groupedData[name]
+      const totalPrice = groupedData[name]
       .filter(item => item.hidden !== 1) // تصفية البيانات المخفية
       .reduce((sum, item) => sum + parseFloat(item.price), 0);
 
