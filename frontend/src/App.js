@@ -30,7 +30,6 @@ const Alldata = lazy(()=> import('./component/it/allDate.js'))
 // const  Chatbot = lazy(()=> import('./component/chatbot/chat.js'))
 // const  Pages = lazy(()=> import('./component/page.js'))
 // const  Department = lazy(()=> import('./component/Department.js'))
-const  Department = lazy(()=> import('./component/it/cssemp/Employeetable.js'))
 
 
 
@@ -105,7 +104,7 @@ const App = ()=>{
             <div>
           <Navbars />
                     
-           < Department />
+           < Home2 />
           
           
           {/* <Footer/> */}
