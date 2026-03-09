@@ -18,6 +18,7 @@ import './App.css';
 
 
 const Home = lazy(()=> import('./component/Home.js'))
+const Home2 = lazy(()=> import('./component/home2.js'))
 const Click = lazy(()=> import('./component/click.js'))
 const IT = lazy(()=> import('./component/it/Employee.js'))
 const ITP = lazy(()=> import('./component/it/testP.js'))
@@ -103,7 +104,7 @@ const App = ()=>{
             <div>
           <Navbars />
                     
-           < Home />
+           < Home2 />
           
           
           {/* <Footer/> */}

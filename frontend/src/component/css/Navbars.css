@@ -1,16 +1,24 @@
-.navbar{
-  /* box-shadow: 0 0 8px #fff; */
-  /* background: #000; */
-  
+.navbar {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  background:  rgba(27, 128, 244, 0.697);
+  /* أزرق فاتح شفاف نسبيًا */
+  background: rgba(27, 128, 244, 0.85);
   padding: 15px;
-  /* backdrop-filter: blur(8px);
-  background: #ffffff81; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.navbar:hover {
+  background: rgba(27, 128, 244, 1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 .navbar2{
   /* background: none; */

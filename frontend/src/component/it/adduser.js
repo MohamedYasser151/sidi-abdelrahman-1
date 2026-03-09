@@ -55,13 +55,13 @@ function Employeetable() {
       <span className={styles.iconimage}>
         {/* <img src={Img} alt="" /> */}
       </span>
-      <h1>add client</h1>
+      <h1>اضافه شخص</h1>
       <form onSubmit={handleSubmit}>
         <div className={styles.inp}>
-          <input type="text" placeholder="Name" name="username" spellCheck="false" required onChange={handleChange} />
-          <input type="text" placeholder="Price" name="price" required onChange={handleChange} />
+          <input type="text" placeholder="الاسم" name="username" spellCheck="false" required onChange={handleChange} />
+          <input type="text" placeholder="السعر" name="price" required onChange={handleChange} />
           <input type="time" placeholder="time" name="time" required onChange={handleChange} />
-          <input type="text" placeholder="Mobile number" id="numberma" name="number" required onChange={handleChange} />
+          <input type="text" placeholder="رقم الهاتف" id="numberma" name="number" required onChange={handleChange} />
           <input type="date" placeholder="date"  name="date" required onChange={handleChange} />
         </div>
 
@@ -81,7 +81,7 @@ function Employeetable() {
         <div className={styles.option}>
           <div className={styles.selectbox}>
             <select className="option" name="week" required onChange={handleChange} defaultValue="">
-              <option value="" disabled hidden>week</option>
+              <option value="" disabled hidden>اليوم</option>
               <option value="السبت">السبت</option>
               <option value="الأحد">الأحد</option>
               <option value="الأثنين">الأثنين</option>
@@ -93,7 +93,7 @@ function Employeetable() {
         </div>
 
         <div className={styles.btn}>
-          <button type="submit">Register</button>
+          <button type="submit">تسجيل</button>
         </div>
        
       </form>
