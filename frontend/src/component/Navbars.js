@@ -73,6 +73,9 @@ const changeFr = () =>{
             <NavLink to="/Alldata" className="NavLink">
             {t("جميع أيام العميل")}
             </NavLink>
+            <NavLink to="/designer" className="NavLink">
+            {t("Designer")}
+            </NavLink>
             {/* <NavLink to="/Department" className="NavLink">
             {t("الاقسام")}
             </NavLink> */}
